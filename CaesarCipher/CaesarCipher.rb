@@ -18,6 +18,8 @@ class CaesarCipher
 			# If shift goes under 65
 			elsif((letter+shift) < 65)
 				letter = 91 - (65 - (letter+shift))
+			else
+				letter = letter + shift
 			end
 		end
 		if((letter >= 97) && (letter <=122))
